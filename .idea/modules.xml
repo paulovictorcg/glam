@@ -3,7 +3,8 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
-      <module fileurl="file://$PROJECT_DIR$/glam.iml" filepath="$PROJECT_DIR$/glam.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/glam.iml" filepath="$PROJECT_DIR$/.idea/glam.iml" />
+      <module fileurl="file://C:\dev\glam\glam.iml" filepath="C:\dev\glam\glam.iml" />
     </modules>
   </component>
 </project>
