@@ -9,9 +9,9 @@
     <color name="cardview_shadow_start_color">#37000000</color>
     <color name="cardview_shadow_end_color">#03000000</color>
     <color name="abc_search_url_text_normal">#7fa87f</color>
-    <color name="abc_search_url_text_selected">?unknown_ref: 106000c</color>
-    <color name="abc_search_url_text_pressed">?unknown_ref: 106000c</color>
-    <color name="abc_input_method_navigation_guard">?unknown_ref: 106000c</color>
+    <color name="abc_search_url_text_selected">#106000</color> <!-- Verificar valor correto -->
+    <color name="abc_search_url_text_pressed">#106000</color>  <!-- Verificar valor correto -->
+    <color name="abc_input_method_navigation_guard">#106000</color>  <!-- Verificar valor correto -->
     <color name="background_material_dark">#ff303030</color>
     <color name="background_material_light">#ffeeeeee</color>
     <color name="background_floating_material_dark">#ff424242</color>
@@ -28,8 +28,8 @@
     <color name="button_material_light">#ffd6d7d7</color>
     <color name="switch_thumb_normal_material_dark">#ffbdbdbd</color>
     <color name="switch_thumb_normal_material_light">#fff1f1f1</color>
-    <color name="bright_foreground_material_dark">?unknown_ref: 106000b</color>
-    <color name="bright_foreground_material_light">?unknown_ref: 106000c</color>
+    <color name="bright_foreground_material_dark">#106000</color>  <!-- Verificar valor correto -->
+    <color name="bright_foreground_material_light">#106000</color>  <!-- Verificar valor correto -->
     <color name="bright_foreground_disabled_material_dark">#80ffffff</color>
     <color name="bright_foreground_disabled_material_light">#80000000</color>
     <color name="bright_foreground_inverse_material_dark">@color/bright_foreground_material_light</color>
@@ -75,13 +75,13 @@
     <color name="main_grey">#8f8f8f</color>
     <color name="fb_blue">#3b5998</color>
     <color name="main_grey_lt">#e5e5e5</color>
-    <color name="abc_background_cache_hint_selector_material_dark">res/color/abc_background_cache_hint_selector_material_dark.xml</color>
-    <color name="abc_background_cache_hint_selector_material_light">res/color/abc_background_cache_hint_selector_material_light.xml</color>
-    <color name="abc_primary_text_disable_only_material_dark">res/color/abc_primary_text_disable_only_material_dark.xml</color>
-    <color name="abc_primary_text_disable_only_material_light">res/color/abc_primary_text_disable_only_material_light.xml</color>
-    <color name="abc_primary_text_material_dark">res/color/abc_primary_text_material_dark.xml</color>
-    <color name="abc_primary_text_material_light">res/color/abc_primary_text_material_light.xml</color>
-    <color name="abc_search_url_text">res/color/abc_search_url_text.xml</color>
-    <color name="abc_secondary_text_material_dark">res/color/abc_secondary_text_material_dark.xml</color>
-    <color name="abc_secondary_text_material_light">res/color/abc_secondary_text_material_light.xml</color>
+    <!--<color name="abc_background_cache_hint_selector_material_dark">res/color/abc_background_cache_hint_selector_material_dark.xml</color>-->
+    <!--<color name="abc_background_cache_hint_selector_material_light">res/color/abc_background_cache_hint_selector_material_light.xml</color>-->
+    <!--<color name="abc_primary_text_disable_only_material_dark">res/color/abc_primary_text_disable_only_material_dark.xml</color>-->
+    <!--<color name="abc_primary_text_disable_only_material_light">res/color/abc_primary_text_disable_only_material_light.xml</color>-->
+    <!--<color name="abc_primary_text_material_dark">res/color/abc_primary_text_material_dark.xml</color>-->
+    <!--<color name="abc_primary_text_material_light">res/color/abc_primary_text_material_light.xml</color>-->
+    <!--<color name="abc_search_url_text">res/color/abc_search_url_text.xml</color>-->
+    <!--<color name="abc_secondary_text_material_dark">res/color/abc_secondary_text_material_dark.xml</color>-->
+    <!--<color name="abc_secondary_text_material_light">res/color/abc_secondary_text_material_light.xml</color>-->
 </resources>
