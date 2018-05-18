@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end"
+    android:orientation="vertical"
+    android:background="@drawable/home_bg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/pad_80dp"
+        android:src="@drawable/home_logo" />
+    <LinearLayout
+        android:gravity="top|bottom|center_vertical|fill_vertical|center|fill"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/pad_50dp"
+        android:layout_marginRight="@dimen/pad_50dp"
+        android:layout_marginBottom="@dimen/pad_80dp">
+        <Button android:id="@+id/btnReg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/create_acc" style="@style/btn_blue" />
+        <Button android:id="@+id/btnLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/pad_20dp"
+            android:text="@string/sign_in" style="@style/btn_white" />
+    </LinearLayout>
+</LinearLayout>

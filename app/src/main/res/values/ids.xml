@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item type="id" name="home" />
+    <item type="id" name="up" />
+    <item type="id" name="action_bar_spinner" />
+    <item type="id" name="action_bar_activity_content" />
+    <item type="id" name="split_action_bar" />
+    <item type="id" name="action_menu_divider" />
+    <item type="id" name="action_menu_presenter" />
+    <item type="id" name="progress_circular" />
+    <item type="id" name="progress_horizontal" />
+    <item type="id" name="action_bar_title">false</item>
+    <item type="id" name="action_bar_subtitle">false</item>
+    <item type="id" name="action_mode_close_button">false</item>
+    <item type="id" name="activity_chooser_view_content">false</item>
+    <item type="id" name="expand_activities_button">false</item>
+    <item type="id" name="image">false</item>
+    <item type="id" name="default_activity_button">false</item>
+    <item type="id" name="list_item">false</item>
+    <item type="id" name="icon">false</item>
+    <item type="id" name="title">false</item>
+    <item type="id" name="expanded_menu">false</item>
+    <item type="id" name="checkbox">false</item>
+    <item type="id" name="shortcut">false</item>
+    <item type="id" name="radio">false</item>
+    <item type="id" name="action_bar_root">false</item>
+    <item type="id" name="action_mode_bar_stub">false</item>
+    <item type="id" name="action_mode_bar">false</item>
+    <item type="id" name="decor_content_parent">false</item>
+    <item type="id" name="action_bar_container">false</item>
+    <item type="id" name="action_bar">false</item>
+    <item type="id" name="action_context_bar">false</item>
+    <item type="id" name="edit_query">false</item>
+    <item type="id" name="search_bar">false</item>
+    <item type="id" name="search_badge">false</item>
+    <item type="id" name="search_button">false</item>
+    <item type="id" name="search_edit_frame">false</item>
+    <item type="id" name="search_mag_icon">false</item>
+    <item type="id" name="search_plate">false</item>
+    <item type="id" name="search_src_text">false</item>
+    <item type="id" name="search_close_btn">false</item>
+    <item type="id" name="submit_area">false</item>
+    <item type="id" name="search_go_btn">false</item>
+    <item type="id" name="search_voice_btn">false</item>
+    <item type="id" name="drawer_layout">false</item>
+    <item type="id" name="ll">false</item>
+    <item type="id" name="my_awesome_toolbar">false</item>
+    <item type="id" name="spinner_toolbar">false</item>
+    <item type="id" name="content_frame">false</item>
+    <item type="id" name="left_drawer">false</item>
+    <item type="id" name="card_view">false</item>
+    <item type="id" name="img">false</item>
+    <item type="id" name="lbl1">false</item>
+    <item type="id" name="lbl2">false</item>
+    <item type="id" name="d">false</item>
+    <item type="id" name="lbl3">false</item>
+    <item type="id" name="lbl4">false</item>
+    <item type="id" name="btnAdd">false</item>
+    <item type="id" name="sa">false</item>
+    <item type="id" name="df">false</item>
+    <item type="id" name="cardList">false</item>
+    <item type="id" name="textView1">false</item>
+    <item type="id" name="view1">false</item>
+    <item type="id" name="textView2">false</item>
+    <item type="id" name="newPmt">false</item>
+    <item type="id" name="btnDone">false</item>
+    <item type="id" name="lft">false</item>
+    <item type="id" name="imageView1">false</item>
+    <item type="id" name="btnReg">false</item>
+    <item type="id" name="btnLogin">false</item>
+    <item type="id" name="header">false</item>
+    <item type="id" name="spinner1">false</item>
+    <item type="id" name="lbl">false</item>
+    <item type="id" name="scrb">false</item>
+    <item type="id" name="ma">false</item>
+    <item type="id" name="ae">false</item>
+    <item type="id" name="pager">false</item>
+    <item type="id" name="aa">false</item>
+    <item type="id" name="vDots">false</item>
+    <item type="id" name="editText1">false</item>
+    <item type="id" name="editText2">false</item>
+    <item type="id" name="btnFb">false</item>
+    <item type="id" name="a">false</item>
+    <item type="id" name="btnForget">false</item>
+    <item type="id" name="sda">false</item>
+    <item type="id" name="pager_tab_strip">false</item>
+    <item type="id" name="fabCart">false</item>
+    <item type="id" name="aaa">false</item>
+    <item type="id" name="as">false</item>
+    <item type="id" name="btnLike">false</item>
+    <item type="id" name="btnComment">false</item>
+    <item type="id" name="btnMore">false</item>
+    <item type="id" name="switch1">false</item>
+    <item type="id" name="menu_cart">false</item>
+    <item type="id" name="menu_grid">false</item>
+    <item type="id" name="menu_search">false</item>
+</resources>
