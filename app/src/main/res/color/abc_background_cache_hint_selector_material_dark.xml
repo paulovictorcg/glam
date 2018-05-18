@@ -3,4 +3,3 @@
     <item android:color="@color/background_material_dark" android:state_accelerated="false" />
     <item android:color="@color/background_material_dark" />
 </selector>
-p
