@@ -9,6 +9,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/pad_80dp"
+        android:layout_gravity="center"
         android:src="@drawable/home_logo" />
     <LinearLayout
         android:gravity="top|bottom|center_vertical|fill_vertical|center|fill"
@@ -18,14 +19,19 @@
         android:layout_marginLeft="@dimen/pad_50dp"
         android:layout_marginRight="@dimen/pad_50dp"
         android:layout_marginBottom="@dimen/pad_80dp">
-        <Button android:id="@+id/btnReg"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
-            <!--android:text="@string/create_acc" style="@style/btn_blue" /> PV-->
-        <Button android:id="@+id/btnLogin"
+        <Button
+            android:id="@+id/btnReg"
+            style="@style/btn_blue"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/pad_20dp"/>
-            <!--android:text="@string/sign_in" style="@style/btn_white" /> PV-->
+            android:text="@string/create_acc" />
+
+        <Button
+            android:id="@+id/btnLogin"
+            style="@style/btn_white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/pad_20dp"
+            android:text="@string/sign_in" />
     </LinearLayout>
 </LinearLayout>
