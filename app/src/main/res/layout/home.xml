@@ -20,12 +20,12 @@
         android:layout_marginBottom="@dimen/pad_80dp">
         <Button android:id="@+id/btnReg"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/create_acc" style="@style/btn_blue" />
+            android:layout_height="wrap_content" />
+            <!--android:text="@string/create_acc" style="@style/btn_blue" /> PV-->
         <Button android:id="@+id/btnLogin"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/pad_20dp"
-            android:text="@string/sign_in" style="@style/btn_white" />
+            android:layout_marginTop="@dimen/pad_20dp"/>
+            <!--android:text="@string/sign_in" style="@style/btn_white" /> PV-->
     </LinearLayout>
 </LinearLayout>

@@ -47,9 +47,9 @@ public class SplashScreen extends Activity {
     private synchronized void doFinish() {
         if (this.isRunning) {
             this.isRunning = false;
-           // Intent i = new Intent(this, Home.class);
-            //i.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-           // startActivity(i);
+            Intent i = new Intent(this, Home.class);
+            i.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+            startActivity(i);
             finish();
         }
     }
