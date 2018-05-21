@@ -34,6 +34,7 @@ public class SplashScreen extends Activity {
     }
 
     public void onCreate(Bundle savedInstanceState) {
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.splash);
         this.isRunning = true;
