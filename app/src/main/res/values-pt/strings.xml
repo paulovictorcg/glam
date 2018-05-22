@@ -20,6 +20,6 @@
     <string name="sign_up"><u>Novo aqui? Cadastre-se</u></string>
     <string name="sign_in_fb">Entre com Facebook</string>
     <string name="email">E-mail</string>
-    <string name="forget_pwd">Esqueceu sua Senha?</string>
+    <string name="forget_pwd">Forgot Password?</string>
     <string name="password">Senha</string>
 </resources>
