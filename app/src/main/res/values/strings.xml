@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Glam</string>
+    <string name="sign_up">&lt;u&gt;New here? Sign up&lt;/u&gt;</string>
+    <string name="sign_in_fb">Sign in with Facebook</string>
+    <string name="email">Email Address</string>
+    <string name="forget_pwd">Forgot Password?</string>
 </resources>

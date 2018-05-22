@@ -17,4 +17,9 @@
     <string name="abc_shareactionprovider_share_with">Compartilhar com</string>
     <string name="create_acc">Criar Conta</string>
     <string name="sign_in">Entrar</string>
+    <string name="sign_up"><u>Novo aqui? Cadastre-se</u></string>
+    <string name="sign_in_fb">Entre com Facebook</string>
+    <string name="email">E-mail</string>
+    <string name="forget_pwd">Esqueceu sua Senha?</string>
+    <string name="password">Senha</string>
 </resources>

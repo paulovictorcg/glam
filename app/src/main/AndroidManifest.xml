@@ -17,6 +17,7 @@
             </intent-filter>
         </activity>
         <activity android:theme="@style/AppTheme.NoActionBar" android:name=".Home" android:screenOrientation="portrait" />
+        <activity  android:theme="@style/AppTheme.NoActionBar" android:name="Login" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden|stateAlwaysHidden|adjustPan|adjustNothing" />
     </application>
 
 </manifest>

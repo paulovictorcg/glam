@@ -11,19 +11,22 @@
         android:layout_marginTop="@dimen/pad_80dp"
         android:layout_gravity="center"
         android:src="@drawable/home_logo" />
+
     <LinearLayout
-        android:gravity="top|bottom|center_vertical|fill_vertical|center|fill"
-        android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/pad_80dp"
         android:layout_marginLeft="@dimen/pad_50dp"
         android:layout_marginRight="@dimen/pad_50dp"
-        android:layout_marginBottom="@dimen/pad_80dp">
+        android:gravity="top|bottom|center_vertical|fill_vertical|center|fill"
+        android:orientation="vertical">
+
         <Button
             android:id="@+id/btnReg"
             style="@style/btn_blue"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="97dp"
             android:text="@string/create_acc" />
 
         <Button
