@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end"
+    android:orientation="vertical" android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ScrollView android:id="@+id/sa"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.0">
+        <LinearLayout
+            android:gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end"
+            android:orientation="vertical"
+            android:id="@+id/df"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/cardList"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/pad_5dp" />
+            <LinearLayout android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/pad_10dp"
+                android:layout_marginBottom="@dimen/pad_15dp">
+                <TextView android:textSize="@dimen/txt_18sp"
+                    android:textColor="@color/main_grey_dk1"
+                    android:id="@+id/textView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="TOTAL" />
+                <TextView
+                    android:textSize="@dimen/txt_18sp"
+                    android:textColor="#ffff8800"
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/pad_10dp"
+                    android:text="#467" />
+            </LinearLayout>
+            <View
+                android:id="@+id/view1"
+                android:background="@color/main_grey_lt"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="****  ****  ****  2345"
+                style="@style/card_disable" />
+            <View
+                android:id="@+id/view2"
+                android:background="@color/main_grey_lt"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="****  ****  ****  3344" style="@style/card_enabled" />
+            <View
+                android:id="@+id/view3"
+                android:background="@color/main_grey_lt"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+            <TextView
+                android:id="@+id/newPmt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="New Payment Method"
+                android:drawableLeft="@drawable/ic_plus_gray"
+                style="@style/card_disable" />
+        </LinearLayout>
+    </ScrollView>
+    <Button
+        android:id="@+id/btnDone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Complete Purchase" style="@style/btn_blue" />
+</LinearLayout>
