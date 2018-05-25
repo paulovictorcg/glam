@@ -23,7 +23,7 @@ import glam.android.minexp.glam.custom.CustomFragment;
 import glam.android.minexp.glam.custom.CustomActivity;
 import glam.android.minexp.glam.model.Data;
 import java.util.ArrayList;
-
+import glam.android.minexp.glam.R;
 public class Checkout extends CustomFragment {
     private ArrayList<Data> iList;
 

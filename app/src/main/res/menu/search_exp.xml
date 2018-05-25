@@ -3,13 +3,14 @@
     xmlns:android="http://schemas.android.com/apk/res/android">
     <item android:title="@string/app_name"
         app:icon="@drawable/ic_grid"
-        app:id="@+id/menu_grid"
+        android:id="@+id/menu_grid"
+
         app:showAsAction="always"
         app:title="@string/grid" />
     <item
         app:actionViewClass="android.widget.SearchView"
         app:icon="@drawable/icon_search"
-        app:id="@+id/menu_search"
+        android:id="@+id/menu_search"
         app:showAsAction="always"
         android:title="@string/search" />
 </menu>
