@@ -26,5 +26,11 @@
     <string name="detail_temp">Moto 360 stays true to the timeless form of the classic wristwatch. A round ... That\'s why all the leather used for Moto 360 comes from American leather crafters.\n\nThe 203 Series is a comprehensive update of the 200 collection. With many design details drawn from the 302 Series chrongraph, the 203 Series still maintains reference to the engineering dials it was inspired by. The 40mm two-part case features a lugless design and a chamfered bezel.</string>
     <string name="search">Search</string>
     <string name="grid">Grid</string>
-
+    <string name="email1">Email</string>
+    <string name="tnc">Termos &amp; Condições</string>
+    <string name="push_notif">Notificações Push</string>
+    <string name="email_notif">Notificações de E-mail</string>
+    <string name="credit_cards">Cartões de Crédito</string>
+    <string name="drawer_open">Open navigation drawer</string>
+    <string name="drawer_close">Close navigation drawer</string>
 </resources>

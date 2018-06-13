@@ -103,7 +103,7 @@
     <!--<dimen name="txt_14sp">20sp</dimen>-->
     <dimen name="txt_15sp">15sp</dimen>
     <!--<dimen name="txt_15sp">22sp</dimen>-->
-    <!--<dimen name="txt_16sp">16sp</dimen>-->
+    <dimen name="txt_16sp">16sp</dimen>
     <!--<dimen name="txt_16sp">24sp</dimen>-->
     <dimen name="txt_18sp">18sp</dimen>
     <!--<dimen name="txt_18sp">27sp</dimen>-->

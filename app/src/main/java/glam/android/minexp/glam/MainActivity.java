@@ -10,6 +10,7 @@ import android.content.Intent;
 import android.content.res.Configuration;
 import android.os.Build.VERSION;
 import android.os.Bundle;
+import android.support.annotation.NonNull;
 import android.support.v4.view.ViewCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v4.widget.DrawerLayout.DrawerListener;
@@ -18,6 +19,7 @@ import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.RecyclerView.OnScrollListener;
 import android.support.v7.widget.Toolbar;
+import android.support.v7.widget.ActivityChooserView;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
@@ -34,6 +36,9 @@ import glam.android.minexp.glam.ui.Settings;
 import java.util.ArrayList;
 import glam.android.minexp.glam.R;
 
+
+
+
 @SuppressLint({"InlinedApi"})
 public class MainActivity extends CustomActivity {
     private static final TypeEvaluator ARGB_EVALUATOR = new ArgbEvaluator();
@@ -47,56 +52,6 @@ public class MainActivity extends CustomActivity {
     private boolean mActionBarShown = true;
     private ObjectAnimator mStatusBarColorAnimator;
     public Toolbar toolbar;
-
-    class C01942 implements DrawerListener {
-        C01942() {
-        }
-
-        public void onDrawerClosed(View drawerView) {
-            MainActivity.this.onNavDrawerStateChanged(false, false);
-        }
-
-        public void onDrawerOpened(View drawerView) {
-            MainActivity.this.onNavDrawerStateChanged(true, false);
-        }
-
-        public void onDrawerStateChanged(int newState) {
-            MainActivity.this.onNavDrawerStateChanged(MainActivity.this.drawerLayout.isDrawerOpen(8388611), newState != 0);
-        }
-
-        public void onDrawerSlide(View drawerView, float slideOffset) {
-        }
-    }
-
-    class C01954 extends OnScrollListener {
-        static final int ITEMS_THRESHOLD = 3;
-        int lastFvi = 0;
-
-        C01954() {
-        }
-
-        public void onScrollStateChanged(RecyclerView view, int scrollState) {
-        }
-
-        public void onScrolled(RecyclerView recyclerView, int dx, int dy) {
-            int i = 0;
-            super.onScrolled(recyclerView, dx, dy);
-            try {
-                int firstVisibleItem = ((LinearLayoutManager) recyclerView.getLayoutManager()).findFirstVisibleItemPosition();
-                MainActivity mainActivity = MainActivity.this;
-                int i2 = firstVisibleItem <= 3 ? 0 : ActivityChooserViewAdapter.MAX_ACTIVITY_COUNT_UNLIMITED;
-                if (this.lastFvi - firstVisibleItem > 0) {
-                    i = Integer.MIN_VALUE;
-                } else if (this.lastFvi != firstVisibleItem) {
-                    i = ActivityChooserViewAdapter.MAX_ACTIVITY_COUNT_UNLIMITED;
-                }
-                mainActivity.onMainContentScrolled(i2, i);
-                this.lastFvi = firstVisibleItem;
-            } catch (Exception e) {
-                e.printStackTrace();
-            }
-        }
-    }
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -120,7 +75,27 @@ public class MainActivity extends CustomActivity {
         this.drawerLayout.setDrawerListener(this.drawerToggle);
         this.drawerLayout.closeDrawers();
         setupLeftNavDrawer();
-        this.drawerLayout.setDrawerListener(new C01942());
+        this.drawerLayout.setDrawerListener(new DrawerListener() {
+            @Override
+            public void onDrawerSlide(@NonNull View drawerView, float slideOffset) {
+
+            }
+
+            @Override
+            public void onDrawerOpened(@NonNull View drawerView) {
+                MainActivity.this.onNavDrawerStateChanged(true, false);
+            }
+
+            @Override
+            public void onDrawerClosed(@NonNull View drawerView) {
+                MainActivity.this.onNavDrawerStateChanged(false, false);
+            }
+
+            @Override
+            public void onDrawerStateChanged(int newState) {
+                MainActivity.this.onNavDrawerStateChanged(MainActivity.this.drawerLayout.isDrawerOpen(8388611), newState != 0);
+            }
+        });
     }
 
     private void onNavDrawerStateChanged(boolean isOpen, boolean isAnimating) {
@@ -188,7 +163,29 @@ public class MainActivity extends CustomActivity {
 
     public void enableActionBarAutoHide(RecyclerView recList) {
         initActionBarAutoHide();
-        recList.setOnScrollListener(new C01954());
+        recList.setOnScrollListener(new OnScrollListener() {
+            static final int ITEMS_THRESHOLD = 3;
+            int lastFvi = 0;
+            @Override
+            public void onScrolled(RecyclerView recyclerView, int dx, int dy) {
+                int i = 0;
+                super.onScrolled(recyclerView, dx, dy);
+                try {
+                    int firstVisibleItem = ((LinearLayoutManager) recyclerView.getLayoutManager()).findFirstVisibleItemPosition();
+                    MainActivity mainActivity = MainActivity.this;
+                    int i2 = firstVisibleItem <= 3 ? 0 : Integer.MAX_VALUE;
+                    if (this.lastFvi - firstVisibleItem > 0) {
+                        i = Integer.MIN_VALUE;
+                    } else if (this.lastFvi != firstVisibleItem) {
+                        i = Integer.MAX_VALUE;
+                    }
+                    mainActivity.onMainContentScrolled(i2, i);
+                    this.lastFvi = firstVisibleItem;
+                } catch (Exception e) {
+                    e.printStackTrace();
+                }
+            }
+        });
     }
 
     private void onMainContentScrolled(int currentY, int deltaY) {
@@ -279,4 +276,5 @@ public class MainActivity extends CustomActivity {
         }
         return super.onOptionsItemSelected(item);
     }
+
 }

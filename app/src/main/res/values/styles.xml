@@ -80,5 +80,10 @@
         <!--<item>@drawable/credit_card_enabled</item>-->
         <!--<item>@drawable/icon_checked</item>-->
     </style>
-
+    <style name="switch_custom">
+        <!--<item name="android:textSize">@dimen/txt_16sp</item>-->
+        <!--<item>@color/gray_dk</item>-->
+        <!--<item>@drawable/switch_thumb</item>-->
+        <!--<item>@drawable/switch_track</item>-->
+    </style>
 </resources>
